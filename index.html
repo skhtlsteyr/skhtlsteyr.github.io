@@ -43,11 +43,30 @@
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         }
 
-        .sidebar a {
+        .sidebar a,
+        .accordion-button {
             padding: 15px;
             text-decoration: none;
             color: white;
             display: block;
+            cursor: pointer;
+            background-color: inherit;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-button:hover {
+            background-color: #00796b;
+        }
+
+        .accordion-content {
+            background-color: #f9f9f9;
+            display: none;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
         }
 
         .content {
@@ -61,15 +80,13 @@
     <div class="container">
         <nav class="sidebar">
             <a href="index.html" class="w3-bar-item w3-button">Home</a>
-            <div class="w3-dropdown-hover">
-                <button class="w3-button">Teaching</button>
-                <div class="w3-dropdown-content w3-bar-block w3-border">
-                    <a href="am1.html" class="w3-bar-item w3-button">AM1</a>
-                    <a href="am2.html" class="w3-bar-item w3-button">AM2</a>
-                    <a href="am3.html" class="w3-bar-item w3-button">AM3</a>
-                    <a href="am4.html" class="w3-bar-item w3-button">AM4</a>
-                    <a href="am5.html" class="w3-bar-item w3-button">AM5</a>
-                </div>
+            <button class="accordion-button w3-button">Teaching</button>
+            <div class="accordion-content w3-bar-block">
+                <a href="am1.html" class="w3-bar-item w3-button">AM1</a>
+                <a href="am2.html" class="w3-bar-item w3-button">AM2</a>
+                <a href="am3.html" class="w3-bar-item w3-button">AM3</a>
+                <a href="am4.html" class="w3-bar-item w3-button">AM4</a>
+                <a href="am5.html" class="w3-bar-item w3-button">AM5</a>
             </div>
             <a href="biography.html" class="w3-bar-item w3-button">Biography</a>
             <a href="#notes" class="w3-bar-item w3-button">Notes</a>
@@ -95,7 +112,24 @@
             </footer>
         </div>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion-button");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
+
 
 
