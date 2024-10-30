@@ -79,36 +79,41 @@
 
     @media only screen and (max-width: 600px) {
         .sidebar {
-            width: 25%; /* Adjusted width for smartphones */
+            width: 25%;
         }
 
         .content {
-            margin-left: 25%; /* Adjusted margin for content */
+            margin-left: 25%;
         }
     }
 </style>
 
 
 
+
 </head>
 <body>
     <div class="container">
-        <nav class="sidebar">
-            <a href="index.html" class="w3-bar-item w3-button">Home</a>
-            <button class="accordion-button w3-button">Teaching</button>
-            <div class="accordion-content w3-bar-block">
-                <a href="am1.html" class="w3-bar-item w3-button">AM1</a>
-                <a href="am2.html" class="w3-bar-item w3-button">AM2</a>
-                <a href="am3.html" class="w3-bar-item w3-button">AM3</a>
-                <a href="am4.html" class="w3-bar-item w3-button">AM4</a>
-                <a href="am5.html" class="w3-bar-item w3-button">AM5</a>
-            </div>
-            <a href="biography.html" class="w3-bar-item w3-button">Biography</a>
-            <a href="#notes" class="w3-bar-item w3-button">Notes</a>
-            <a href="#software" class="w3-bar-item w3-button">Software</a>
-            <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
-        </nav>
-        <div class="content">
+    <nav class="sidebar">
+        <a href="index.html" class="w3-bar-item w3-button" target="content-frame">Home</a>
+        <button class="accordion-button w3-button">Teaching</button>
+        <div class="accordion-content w3-bar-block">
+            <a href="am1.html" class="w3-bar-item w3-button" target="content-frame">AM1</a>
+            <a href="am2.html" class="w3-bar-item w3-button" target="content-frame">AM2</a>
+            <a href="am3.html" class="w3-bar-item w3-button" target="content-frame">AM3</a>
+            <a href="am4.html" class="w3-bar-item w3-button" target="content-frame">AM4</a>
+            <a href="am5.html" class="w3-bar-item w3-button" target="content-frame">AM5</a>
+        </div>
+        <a href="biography.html" class="w3-bar-item w3-button" target="content-frame">Biography</a>
+        <a href="#notes" class="w3-bar-item w3-button" target="content-frame">Notes</a>
+        <a href="#software" class="w3-bar-item w3-button" target="content-frame">Software</a>
+        <a href="blog.html" class="w3-bar-item w3-button" target="content-frame">Blog</a>
+    </nav>
+    <div class="content">
+        <iframe src="index.html" name="content-frame" style="width:100%; height:100vh; border:none;"></iframe>
+    </div>
+</div>
+
             <header class="w3-container w3-teal w3-center w3-padding-32 header-container">
                 <h1>Stefan Klaner</h1>
                 <p>Professor HTL STEYR</p>
