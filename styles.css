@@ -1,68 +1,63 @@
-/* Grundlegende Stile */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    display: flex;
 }
 
-/* Header */
-header {
+.sidebar {
+    width: 200px;
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
 }
 
-header h1 {
-    margin: 0;
-}
-
-/* Navigation */
-nav {
-    background-color: #444;
+.sidebar h2 {
     color: #fff;
-    padding: 10px;
-    text-align: center;
 }
 
-nav a {
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
     color: #fff;
-    margin: 0 10px;
     text-decoration: none;
 }
 
-nav a:hover {
+.sidebar ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hauptinhalt */
-main {
+.content {
+    margin-left: 220px;
     padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
 
-main p {
+p {
+    color: #666;
     line-height: 1.6;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
