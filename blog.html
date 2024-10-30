@@ -6,6 +6,18 @@
     <title>Blog</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+    .twitter-widget-container {
+        max-width: 400px;
+        margin: 20px auto;
+        border: 1px solid #e1e8ed;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        }
+    </style>
+
+    <style>
         .blog-container {
             display: flex;
             flex-wrap: wrap;
@@ -70,6 +82,11 @@
     </header>
     <main class="w3-container w3-padding-32">
         <section class="blog-container">
+            <div class="twitter-widget-container">
+                <a class="twitter-timeline" href="https://twitter.com/YourUsername">Tweets by YourUsername</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
             <div class="blog-card">
                 <img src="blog_image_1.jpg" alt="Blog Image 1">
                 <h3>Blog Post Title 1</h3>
