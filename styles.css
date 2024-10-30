@@ -5,56 +5,45 @@ body {
     background-color: #f4f4f4;
 }
 
-#tlayout {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-#layout-menu {
-    width: 200px;
+header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    vertical-align: top;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-.menu-category {
-    font-weight: bold;
-    margin-bottom: 10px;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.menu-item {
-    margin: 5px 0;
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
-.menu-item a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-.menu-item a:hover {
-    text-decoration: underline;
+main {
+    padding: 2rem;
 }
 
-#layout-content {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+section {
+    margin-bottom: 2rem;
 }
 
-h1 {
-    color: #333;
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-h2 {
-    color: #555;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-
-p {
-    color: #666;
-    line-height: 1.6;
-}
 
 
