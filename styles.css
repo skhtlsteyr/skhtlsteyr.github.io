@@ -3,44 +3,41 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
 }
 
-.sidebar {
+#tlayout {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#layout-menu {
     width: 200px;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    height: 100vh;
-    position: fixed;
+    vertical-align: top;
 }
 
-.sidebar h2 {
-    color: #fff;
+.menu-category {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
+.menu-item {
+    margin: 5px 0;
 }
 
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
+.menu-item a {
     color: #fff;
     text-decoration: none;
 }
 
-.sidebar ul li a:hover {
+.menu-item a:hover {
     text-decoration: underline;
 }
 
-.content {
-    margin-left: 220px;
+#layout-content {
     padding: 20px;
-    max-width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
