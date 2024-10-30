@@ -6,12 +6,29 @@
     <title>Stefan Klaner</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
         .logo {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+            position: static;
+            margin: 10px auto;
+            display: block;
         }
-    </style>
+        
+        header h1 {
+            font-size: 1.5em;
+        }
+
+        .header-container {
+            text-align: center;
+        }
+    }
+</style>
+
 </head>
 <body>
 
