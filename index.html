@@ -6,130 +6,124 @@
     <title>Stefan Klaner</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-    .logo {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
-    @media only screen and (max-width: 600px) {
         .logo {
-            position: static;
-            margin: 10px auto;
-            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
-        header h1 {
-            font-size: 1.5em;
+        @media only screen and (max-width: 600px) {
+            .logo {
+                position: static;
+                margin: 10px auto;
+                display: block;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .header-container {
+                text-align: center;
+            }
         }
 
-        .header-container {
-            text-align: center;
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
         }
-    }
 
-    .container {
-        display: flex;
-    }
-
-    .sidebar {
-        width: 20%;
-        min-width: 150px;
-        max-width: 300px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding-top: 20px;
-        background-color: #009688;
-        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    }
-
-    .sidebar a,
-    .accordion-button {
-        padding: 15px;
-        text-decoration: none;
-        color: white;
-        display: block;
-        cursor: pointer;
-        background-color: inherit;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 1em;
-        transition: background-color 0.3s;
-    }
-
-    .accordion-button:hover {
-        background-color: #00796b;
-    }
-
-    .accordion-content {
-        background-color: #f9f9f9;
-        display: none;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-
-    .content {
-        margin-left: 20%;
-        padding: 20px;
-        flex: 1;
-    }
-
-    @media only screen and (max-width: 600px) {
         .sidebar {
-            width: 25%;
+            width: 20%;
+            min-width: 150px;
+            max-width: 300px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            background-color: #009688;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+
+        .sidebar a,
+        .accordion-button {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            cursor: pointer;
+            background-color: inherit;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-button:hover {
+            background-color: #00796b;
+        }
+
+        .accordion-content {
+            background-color: #f9f9f9;
+            display: none;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
         }
 
         .content {
-            margin-left: 25%;
+            margin-left: 20%;
+            padding: 20px;
+            flex: 1;
         }
-    }
-</style>
 
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
 
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
 
+            .content {
+                margin-left: 0;
+                padding-top: 0;
+            }
 
+            .accordion-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-    <nav class="sidebar">
-        <a href="index.html" class="w3-bar-item w3-button" target="content-frame">Home</a>
-        <button class="accordion-button w3-button">Teaching</button>
-        <div class="accordion-content w3-bar-block">
-            <a href="am1.html" class="w3-bar-item w3-button" target="content-frame">AM1</a>
-            <a href="am2.html" class="w3-bar-item w3-button" target="content-frame">AM2</a>
-            <a href="am3.html" class="w3-bar-item w3-button" target="content-frame">AM3</a>
-            <a href="am4.html" class="w3-bar-item w3-button" target="content-frame">AM4</a>
-            <a href="am5.html" class="w3-bar-item w3-button" target="content-frame">AM5</a>
-        </div>
-        <a href="biography.html" class="w3-bar-item w3-button" target="content-frame">Biography</a>
-        <a href="#notes" class="w3-bar-item w3-button" target="content-frame">Notes</a>
-        <a href="#software" class="w3-bar-item w3-button" target="content-frame">Software</a>
-        <a href="blog.html" class="w3-bar-item w3-button" target="content-frame">Blog</a>
-    </nav>
-    <div class="content">
-        <iframe src="index.html" name="content-frame" style="width:100%; height:100vh; border:none;"></iframe>
-    </div>
-</div>
-
-            <header class="w3-container w3-teal w3-center w3-padding-32 header-container">
-                <h1>Stefan Klaner</h1>
-                <p>Professor HTL STEYR</p>
-                <img src="farb_jpg.jpg" alt="HTL Steyr" width="100px" height="100" class="logo w3-image">
-            </header>
-            <main class="w3-container w3-padding-32">
-                <section id="contact" class="w3-card-4 w3-margin w3-padding">
-                    <h2>Contact</h2>
-                    <p><a href="https://www.htl-steyr.ac.at/">HTL STEYR</a></p>
-                    <p>Schlüsselhofgasse 63, 4400 Steyr</p>
-                    <p>Email: <a href="mailto:stefan.klaner@htl-steyr.ac.at">stefan.klaner@htl-steyr.ac.at</a></p>
-                </section>
-            </main>
-            <footer class="w3-container w3-teal w3-center w3-padding-16">
-                <p>Seite erstellt: 2024 Stefan Klaner. All rights reserved.</p>
-            </footer>
+        <nav class="sidebar">
+            <a href="index.html" class="w3-bar-item w3-button" target="content-frame">Home</a>
+            <button class="accordion-button w3-button">Teaching</button>
+            <div class="accordion-content w3-bar-block">
+                <a href="am1.html" class="w3-bar-item w3-button" target="content-frame">AM1</a>
+                <a href="am2.html" class="w3-bar-item w3-button" target="content-frame">AM2</a>
+                <a href="am3.html" class="w3-bar-item w3-button" target="content-frame">AM3</a>
+                <a href="am4.html" class="w3-bar-item w3-button" target="content-frame">AM4</a>
+                <a href="am5.html" class="w3-bar-item w3-button" target="content-frame">AM5</a>
+            </div>
+            <a href="biography.html" class="w3-bar-item w3-button" target="content-frame">Biography</a>
+            <a href="#notes" class="w3-bar-item w3-button" target="content-frame">Notes</a>
+            <a href="#software" class="w3-bar-item w3-button" target="content-frame">Software</a>
+            <a href="blog.html" class="w3-bar-item w3-button" target="content-frame">Blog</a>
+        </nav>
+        <div class="content">
+            <iframe src="index.html" name="content-frame" style="width:100%; height:100vh; border:none;"></iframe>
         </div>
     </div>
     <script>
