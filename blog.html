@@ -3,73 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Stefan Klaner</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        .twitter-widget-container {
-            max-width: 100%;
-            margin: 20px auto;
-            border: 1px solid #e1e8ed;
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            overflow: hidden;
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
         @media only screen and (max-width: 600px) {
-            .twitter-widget-container {
-                padding: 5px;
-                border: none;
-                box-shadow: none;
+            .logo {
+                position: static;
+                margin: 10px auto;
+                display: block;
             }
-        }
 
-        .blog-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+            header h1 {
+                font-size: 1.5em;
+            }
 
-        .blog-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 20px;
-            max-width: 100%;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .blog-card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .blog-card h3 {
-            padding: 20px;
-            margin: 0;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .blog-card p {
-            padding: 0 20px 20px;
-            color: #777;
-            line-height: 1.6;
+            .header-container {
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <header class="w3-container w3-teal w3-center w3-padding-32">
+    <header class="w3-container w3-teal w3-center w3-padding-32 header-container">
         <h1>Stefan Klaner</h1>
         <p>Professor HTL STEYR</p>
         <img src="farb_jpg.jpg" alt="HTL Steyr" width="100px" height="100" class="logo w3-image">
     </header>
+    <nav class="w3-bar w3-teal">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Teaching</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="am1.html" class="w3-bar-item w3-button">AM1</a>
+                <a href="am2.html" class="w3-bar-item w3-button">AM2</a>
+                <a href="am3.html" class="w3-bar-item w3-button">AM3</a>
+                <a href="am4.html" class="w3-bar-item w3-button">AM4</a>
+                <a href="am5.html" class="w3-bar-item w3-button">AM5</a>
+            </div>
+        </div>
+        <a href="biography.html" class="w3-bar-item w3-button">Biography</a>
+        <a href="#notes" class="w3-bar-item w3-button">Notes</a>
+        <a href="#software" class="w3-bar-item w3-button">Software</a>
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+    </nav>
     <main class="w3-container w3-padding-32">
         <section class="blog-container">
             <div class="twitter-widget-container">
@@ -86,8 +68,8 @@
                 <h3>Blog Post Title 2</h3>
                 <p>Short excerpt of the blog post. This gives readers an idea of what the post is about.</p>
             </div>
-            <!-- Add more blog cards as needed -->
         </section>
+        <a href="index.html" class="back-button">Back to Main Page</a>
     </main>
     <footer class="w3-container w3-teal w3-center w3-padding-16">
         <p>Seite erstellt: 2024 Stefan Klaner. All rights reserved.</p>
