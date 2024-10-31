@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biography - Stefan Klaner</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .w3-bar .w3-button {
+            text-decoration: none;
+        }
         .back-button {
             display: block;
             width: fit-content;
@@ -18,32 +25,35 @@
             text-decoration: none;
             font-size: 1.2em;
         }
-
         .back-button:hover {
             background-color: #00796b;
         }
     </style>
 </head>
-<body>
-    <header class="w3-container w3-teal w3-center w3-padding-32">
-        <h1>Stefan Klaner</h1>
-        <p>Professor HTL STEYR</p>
-        <img src="farb_jpg.jpg" alt="HTL Steyr" width="100px" height="100" class="logo w3-image">
-    </header>
-    <main class="w3-container w3-padding-32">
-        <section class="w3-card-4 w3-margin w3-padding">
-            <h2>Biography</h2>
-            <p><b>HTL Steyr:</b> Matura</p>
-            <p><b>Universität Salzburg:</b> Mag.rer.nat.: UF Mathematik / Bewegung und Sport</p>
-            <p>Stefan Klaner is a professor at HTL Steyr with a passion for teaching and innovation in the field of technology. He has dedicated his career to educating future engineers.</p>
-        </section>
-        <a href="index.html" class="back-button">Back to Main Page</a>
-    </main>
-    <footer class="w3-container w3-teal w3-center w3-padding-16">
-        <p>Seite erstellt: 2024 Stefan Klaner. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="teaching.html" class="w3-bar-item w3-button w3-padding-large">TEACHING</a>
+    <a href="biography.html" class="w3-bar-item w3-button w3-padding-large">BIOGRAPHY</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">BLOG</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+    <h1 class="w3-xxxlarge"><b>Biography</b></h1>
+</header>
+
+<!-- Main content -->
+<div class="w3-content" style="max-width:1400px">
+    <!-- Biography Section -->
+    <div class="w3-row w3-padding-64" id="biography">
+        <div class="w3-col m12 w3-padding-large">
+            <h1 class="w3-center">Biography</h1>
+            <p class="w3-large"><b>HTL Steyr:</b> Matura</p>
+            <p class="w3-large"><b>Universität Salzburg: UF Mathematik / Bewegung und Sport
 
 
 
