@@ -15,18 +15,23 @@
         }
         .header-container {
             display: flex;
-            flex-direction: column; /* Ändern auf Spalte für vertikale Anordnung */
+            flex-direction: column; /* Vertikale Anordnung für Titel und Logo */
             align-items: center;
             justify-content: center;
             padding: 32px;
         }
+        .name-container {
+            display: flex;
+            align-items: center; /* Vertikale Ausrichtung von Bild und Text */
+        }
         .header-container h1 {
-            margin: 10px 0; /* Abstand um den Namen */
+            margin: 0 10px; /* Abstand um den Namen */
             text-align: center;
         }
         .header-container img {
-            width: 100px; /* Einheitliche Bildgröße */
-            height: 100px; /* Einheitliche Bildgröße */
+            width: auto; /* Automatische Breite */
+            height: 100px; /* Feste Höhe für ein schönes Seitenverhältnis */
+            max-width: 100px; /* Maximale Breite, um Verzerrung zu vermeiden */
         }
         .title-container {
             display: flex;
@@ -51,8 +56,10 @@
 
 <!-- Header -->
 <header class="header-container w3-container w3-center">
-    <img src="Stefan.JPG" alt="Stefan Klaner" class="w3-image">
-    <h1><b>Stefan Klaner</b></h1>
+    <div class="name-container">
+        <h1><b>Stefan Klaner</b></h1>
+        <img src="Stefan.JPG" alt="Stefan Klaner" class="w3-image">
+    </div>
     <div class="title-container">
         <p>Professor HTL STEYR</p>
         <img src="farb_jpg.jpg" alt="HTL Steyr" class="w3-image">
