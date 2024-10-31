@@ -12,7 +12,6 @@
             margin: 0;
             padding: 0;
         }
-
         .container {
             max-width: 1200px;
             margin: auto;
@@ -21,7 +20,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-
         header {
             background-color: #333;
             color: #fff;
@@ -29,12 +27,10 @@
             text-align: center;
             position: relative;
         }
-
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-
         nav {
             display: flex;
             justify-content: center;
@@ -42,25 +38,21 @@
             padding: 10px 0;
             flex-wrap: wrap;
         }
-
         nav a {
             color: #fff;
             margin: 10px;
             text-decoration: none;
             font-size: 1.2em;
         }
-
         main {
             margin-top: 20px;
         }
-
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
         }
-
         .profile-pic {
             max-width: 150px;
             margin: 20px auto;
@@ -68,24 +60,21 @@
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         .section {
             margin: 20px 0;
         }
-
         .section h2 {
             margin-top: 0;
         }
-
         @media only screen and (max-width: 600px) {
             header h1 {
                 font-size: 2em;
             }
-
-            .logo {
-                position: static;
-                margin: 10px auto;
-                display: block;
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
             }
         }
     </style>
@@ -93,7 +82,7 @@
 <body>
     <header class="container">
         <h1>Stefan Klaner</h1>
-        <p>Professor HTL STEYR</p>
+        <p>Professor of Applied Math and Engineering</p>
         <img src="profile.jpg" alt="Stefan Klaner" class="profile-pic">
     </header>
     <nav class="container">
