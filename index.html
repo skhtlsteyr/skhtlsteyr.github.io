@@ -17,21 +17,24 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
             padding: 32px;
+            flex-direction: row; /* Stellt sicher, dass es immer in einer Reihe bleibt */
         }
         .header-container h1 {
             margin: 0 20px;
+            text-align: center;
         }
         .header-container img {
             margin: 0 20px;
+            width: 100px; /* Einheitliche Bildgröße */
+            height: 100px; /* Einheitliche Bildgröße */
+        }
+        .content {
+            text-align: center; /* Zentriert den Text in der Hauptinhaltsregion */
         }
         @media only screen and (max-width: 600px) {
             .header-container {
-                flex-direction: column;
-            }
-            .header-container h1 {
-                margin-bottom: 10px;
+                flex-direction: row; /* Beibehalten der Zeilenanordnung */
             }
         }
     </style>
@@ -48,14 +51,13 @@
 
 <!-- Header -->
 <header class="header-container w3-container w3-center">
+    <img src="Stefan.JPG" alt="Stefan Klaner" class="w3-image">
     <h1><b>Stefan Klaner</b></h1>
-    <img src="Stefan.JPG" alt="Stefan Klaner" width="100px" height="100" class="w3-image">
-    <p>Professor HTL STEYR</p>
-    <img src="farb_jpg.jpg" alt="HTL Steyr" width="100px" height="100" class="w3-image">
+    <img src="farb_jpg.jpg" alt="HTL Steyr" class="w3-image">
 </header>
 
 <!-- Main content -->
-<div class="w3-content w3-padding-32">
+<div class="w3-content w3-padding-32 content">
     <!-- Contact Section -->
     <div class="w3-container w3-white w3-margin-bottom w3-card-4">
         <h2>Contact</h2>
