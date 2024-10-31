@@ -39,8 +39,23 @@
             justify-content: center;
             margin-top: 10px; /* Abstand über dem Titel */
         }
+        .title-container img {
+            margin-left: 10px; /* Abstand zwischen Titel und Logo */
+        }
         .content {
             text-align: center; /* Zentriert den Text in der Hauptinhaltsregion */
+        }
+        /* Zusätzliche Styles für die Ausrichtung der Bilder */
+        @media only screen and (max-width: 600px) {
+            .name-container {
+                flex-direction: column; /* Untereinander auf kleinen Bildschirmen */
+                align-items: center; /* Zentriert die Elemente */
+            }
+            .title-container {
+                flex-direction: column; /* Untereinander auf kleinen Bildschirmen */
+                align-items: center; /* Zentriert die Elemente */
+                margin-top: 20px; /* Abstand für bessere Sichtbarkeit */
+            }
         }
     </style>
 </head>
@@ -84,6 +99,7 @@
 
 </body>
 </html>
+
 
 
 
