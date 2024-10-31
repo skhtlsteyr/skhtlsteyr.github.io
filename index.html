@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefan Klaner - Applied Math and Engineering</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -12,46 +12,8 @@
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px 0;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: #fff;
-            margin: 10px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        main {
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+        .w3-bar .w3-button {
+            padding: 16px;
         }
         .profile-pic {
             max-width: 150px;
@@ -66,13 +28,13 @@
         .section h2 {
             margin-top: 0;
         }
+        footer {
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
         @media only screen and (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
-            nav {
-                flex-direction: column;
-            }
             nav a {
                 margin: 5px 0;
             }
@@ -80,31 +42,41 @@
     </style>
 </head>
 <body>
-    <header class="container">
-        <h1>Stefan Klaner</h1>
-        <p>Professor of Applied Math and Engineering</p>
+    <!-- Navigation Bar -->
+    <div class="w3-bar w3-black w3-card">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+        <div class="w3-right w3-hide-small">
+            <a href="teaching.html" class="w3-bar-item w3-button">TEACHING</a>
+            <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+            <a href="blog.html" class="w3-bar-item w3-button">BLOG</a>
+            <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px; background-color: #333; color: #fff;">
+        <h1 class="w3-margin w3-jumbo">Stefan Klaner</h1>
+        <p class="w3-xlarge">Professor HTL STEYR</p>
         <img src="profile.jpg" alt="Stefan Klaner" class="profile-pic">
     </header>
-    <nav class="container">
-        <a href="index.html">Home</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="biography.html">Biography</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main class="container">
-        <section class="section" id="contact">
+
+    <!-- Main Content -->
+    <div class="w3-container w3-padding-32">
+        <section class="w3-card w3-margin w3-padding section" id="contact">
             <h2>Contact</h2>
             <p><a href="https://www.htl-steyr.ac.at/">HTL STEYR</a></p>
             <p>Schlüsselhofgasse 63, 4400 Steyr</p>
             <p>Email: <a href="mailto:stefan.klaner@htl-steyr.ac.at">stefan.klaner@htl-steyr.ac.at</a></p>
         </section>
-    </main>
-    <footer class="container">
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16">
         <p>Seite erstellt: 2024 Stefan Klaner. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
 
 
 
