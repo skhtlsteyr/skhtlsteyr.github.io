@@ -27,6 +27,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
@@ -39,11 +40,12 @@
             justify-content: center;
             background-color: #444;
             padding: 10px 0;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: #fff;
-            margin: 0 15px;
+            margin: 10px;
             text-decoration: none;
             font-size: 1.2em;
         }
@@ -121,6 +123,18 @@
         .back-button:hover {
             background-color: #444;
         }
+
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .logo {
+                position: static;
+                margin: 10px auto;
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
@@ -132,25 +146,5 @@
     <nav class="container">
         <a href="index.html">Home</a>
         <a href="teaching.html">Teaching</a>
-        <a href="biography.html">Biography</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main class="container">
-        <section class="blog-container">
-            <div class="blog-card">
-                <img src="blog_image_1.jpg" alt="Blog Image 1">
-                <h3>Blog Post Title 1</h3>
-                <p>Short excerpt of the blog post. This gives readers an idea of what the post is about.</p>
-            </div>
-            <div class="blog-card">
-                <img src="blog_image_2.jpg" alt="Blog Image 2">
-                <h3>Blog Post Title 2</h3>
-                <p>Short excerpt of the blog post. This gives readers an idea of what the post is about.</p>
-            </div>
-        </section>
-        <a href="index.html" class="back-button">Back to Main Page</a>
-    </main>
-    <footer class="container">
-        <p>Seite erstellt: 2024 Stefan Klaner.[_{{{CITATION{{{_1{](https://github.com/buribalazs/smooth-drag-order/tree/7b40d21d076c3e31765f61481f537beaf4c5ec9f/README.md)[_{{{CITATION{{{_2{](https://github.com/alexkudzul/php-mysql-blog/tree/13024c176483cefac24061ddf14de44fbe944c99/includes%2Fheader.php)
+        <a href="biography.html
 
